@@ -1,9 +1,9 @@
-from wtforms import BooleanField, StringField, PasswordField, validators
+from wtforms import BooleanField, StringField, validators
 from flask import Flask, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired, FileAllowed
-from wtforms import Form, SelectField, SubmitField
+from wtforms import SelectField, SubmitField
 
 # Without any configuration, the FlaskForm will be a session secure form with csrf protection. We encourage you not to change this.
 #
