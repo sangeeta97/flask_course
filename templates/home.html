@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Please put your information below
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="container pt-3">
+  <div class="row-mt-5">
+    <h3>Please fill details below </h3>
+    <form method="POST" enctype="multipart/form-data"  action="{{ url_for('home_page') }}">
+
+      {{ form.hidden_tag() }}
+
+
+           <br>
+            {{ form.name(class="form-control", placeholder="Name") }}
+            <br>
+            {{ form.hobby.label }}
+
+            {{ form.hobby(class="form-control", placeholder="Hobby") }}
+
+            <br>
+            {{ form.color.label }}
+
+            {{ form.color(class="form-control", placeholder="Color") }}
+
+            <br>
+            {{ form.photo.label }}
+
+            {{ form.photo(class="form-control", placeholder="Inputfile") }}
+
+            <br>
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+            <br>
+
+   </form>
+
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %} You are {{ name1 }} and your information is below.  {% endblock %}
+
+{% block content %}
+
+{% if lucky %}
+<br>
+<br>
+<div class="container">
+
+<div class="row">
+  <div class="col-md-6">
+  <p> You are Lucky and your chosen image is below </p>
+<img src="{{ url_for('send_uploaded_file', filename=context.filename) }}" class="img-fluid" />
+</div>
+</div>
+</div>
+
+{% endif %}
+<br>
+<br>
+<div class="jumbotron">
+  <div class="container pt-6">
+  <div class="card-body">
+    <h1 class="card-title"> your submitted Data</h1>
+    <p class="card-text">Some quick example text in listed way to show your data</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">your name is {{ context.name }}</li>
+    <li class="list-group-item">your hobby is {{ context.hobby }}</li>
+    <li class="list-group-item">your favorite color is {{ context.color }}</li>
+  </ul>
+
+</div>
+</div>
+
+
+{% endblock %}
