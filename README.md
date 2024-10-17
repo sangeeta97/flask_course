@@ -1,5 +1,5 @@
-# peak_roi
-Peak picking using ROI method
+# webapp
+Lucky web app with random sampling of first letter of name to determine whether name is lucky or not.
 It has 2 script files.
 
 Each file uses flask microframework to create instances to be used in the app.
