@@ -8,7 +8,6 @@ Flask-SQLAlchemy==2.5.1
 Flask-Uploads==0.2.1
 Flask-WTF==1.0.1
 Jinja2==3.1.2
-lxml==4.5.2
 MarkupSafe==2.1.1
 matplotlib==3.5.2
 matplotlib-inline==0.1.6
@@ -27,3 +26,4 @@ XlsxWriter==3.0.8
 yagmail==0.15.277
 yarg==0.1.9
 zipp==3.8.0
+gunicorn
